@@ -1,11 +1,12 @@
 method: "random"
+name: "ResNet34_sweep"
 metric:
   name: "val_accuracy"
   goal: "maximize"
 parameters:
   epoch:
-    values: [30, 40, 50]
+    values: [50, 100, 150]
   lr:
-    values: [0.0001, 0.00001, 0.000001]
+    values: [0.1, 0.01, 0.001]
   batch_size:
     values: [1024, 512, 256]
